@@ -16,8 +16,10 @@ function getDelay() {
 }
 
 function makeBoxAppear() {
-  let top = Math.random() * 300;
-  let left = Math.random() * 300;
+  let maxTop = window.innerHeight - 100; // box height
+  let maxLeft = window.innerWidth - 100; // box width
+  let top = Math.random() * maxTop;
+  let left = Math.random() * maxLeft;
   box.style.top = top + "px";
   box.style.left = left + "px";
   box.style.display = "block";
