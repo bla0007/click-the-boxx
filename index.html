@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Click the Box Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Click the Box Game 🎯</h1>
+  <label for="difficulty">Choose Difficulty:</label>
+  <select id="difficulty">
+    <option value="easy">Easy</option>
+    <option value="medium" selected>Medium</option>
+    <option value="hard">Hard</option>
+  </select>
+
+  <p>Click the box as fast as you can!</p>
+  <div id="box"></div>
+  <p id="result">Your time will appear here.</p>
+  <p id="score">Score: 0</p>
+
+  <audio id="clickSound" src="click.wav" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
